@@ -1,5 +1,6 @@
 target/
 .nrepl-port
+.nrepl-history
 out/
 tmp/
 node_modules/
