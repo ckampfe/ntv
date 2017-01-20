@@ -28,14 +28,15 @@
 
 (deftask production []
   (task-options! cljs {:compiler-options
-                       {:optimizations :advanced
+                       {:optimizations :simple
                         :target :nodejs}})
   identity)
 
 (deftask development []
   (task-options! cljs {:compiler-options
-                       {:optimizations :none
-                        :source-map true}}
+                       {:optimizations :simple
+                        :source-map true
+                        :target :nodejs}}
                  reload {:on-jsload 'ntv.app/-main})
   identity)
 
