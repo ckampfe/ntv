@@ -1,6 +1,7 @@
 target/
 .nrepl-port
 .nrepl-history
+.cljs_node_repl/
 out/
 tmp/
 node_modules/
